@@ -21,7 +21,7 @@ export NEZHA_KEY=${NEZHA_KEY:-''}
 export ARGO_DOMAIN=${ARGO_DOMAIN:-''}   
 export ARGO_AUTH=${ARGO_AUTH:-''} 
 
-[[ "$HOSTNAME" == "s1.ct8.pl" ]] && WORKDIR="/home/${USERNAME}/.vmess" || WORKDIR="/home/${USERNAME}/.vmess"
+[[ "$HOSTNAME" == "sever00_s9.hengda.dedyn.io" ]] && WORKDIR="/home/${USERNAME}/.vmess" || WORKDIR="/home/${USERNAME}/.vmess"
 [ -d "$WORKDIR" ] || (mkdir -p "$WORKDIR" && chmod 777 "$WORKDIR")
 
 read_vmess_port() {
